@@ -1,0 +1,81 @@
+@import "reset.css";
+body {
+	font-family: 'PT Sans', sans-serif;
+  margin-top: 80px;
+}
+h1, h2, h3, h4, p, blockquote, ul {
+  width: 700px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4 {
+	font-family: 'PT Sans Caption', sans-serif;
+	font-weight: bold;
+}
+h1 {
+  font-size: 40px;
+	line-height: 46px;
+  margin-top: 16px;
+}
+h1 + p {
+	font-size: 22px;
+	margin-top: 14px;
+	line-height: 32px;
+  color: grey;
+  opacity: 0.7; /*прозрачность */
+}
+h2 {
+  font-size: 32px;
+	margin-top: 43px;
+	line-height: 36px;
+}
+h2 + p {
+	margin-top: 28px;
+}
+h2 + h3 {
+	margin-top: 20px;
+}
+h3 {
+	font-size: 28px;
+	margin-top: 36px;
+	line-height: 34px;
+}
+h4 {
+	margin-top: 20px;
+	font-size: 26px;
+}
+p {
+  font-size: 22px;
+	margin-top: 10px;
+  line-height: 34px;
+}
+p + h2 {
+	margin-top: 40px;
+}
+a, a:visited {
+  color: inherit;
+}
+blockquote {
+	font-style:  italic;
+	margin-top: 52px;
+	margin-bottom: 52px;
+	padding-left: 17px;
+	font-size: 22px;
+	line-height: 34px;
+	border-left: 3px solid black;
+}
+li {
+	line-height: 23px;
+	font-size: 22px;
+	margin-top: 40px;
+	list-style: disc;
+	padding-left: 2px;
+	margin-bottom: 34px;
+}
+ul + li, li + li {
+	margin: 20px auto;
+}
+img {
+  display: block;
+  width: 1020px;
+  margin: 90px auto;
+}
