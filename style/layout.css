@@ -1,24 +1,28 @@
-@import "reset.css";
 body {
   margin-top: 80px;
 
 	font-family: 'PT Sans', sans-serif;
 }
-h1, h2, h3, h4, p, blockquote, ul {
+article, h1, h2, h3, h4, p, blockquote, ul {
   width: 700px;
   margin: 0 auto;
 }
-h1, h2, h3, h4 {
+nav {
+  position: fixed;
+  top: 0;
+  left: 10px;
+}
+article h1, h2, h3, h4 {
 	font-family: 'PT Sans Caption', sans-serif;
 	font-weight: bold;
 }
-h1 {
+article h1 {
   margin-top: 16px;
 
   font-size: 40px;
 	line-height: 46px;
 }
-h1 + p {
+article h1 + p {
 	margin-top: 14px;
 
   opacity: 0.7; /*прозрачность */
@@ -27,42 +31,42 @@ h1 + p {
 	font-size: 22px;
 	line-height: 32px;
 }
-h2 {
+article h2 {
 	margin-top: 43px;
 
   font-size: 32px;
 	line-height: 36px;
 }
-h2 + p {
+article h2 + p {
 	margin-top: 28px;
 }
-h2 + h3 {
+article h2 + h3 {
 	margin-top: 20px;
 }
-h3 {
+article h3 {
 	margin-top: 36px;
 
 	font-size: 28px;
 	line-height: 34px;
 }
-h4 {
+article h4 {
 	margin-top: 20px;
 
 	font-size: 26px;
 }
-p {
+article p {
   margin-top: 10px;
 
   font-size: 22px;
   line-height: 34px;
 }
-p + h2 {
+article p + h2 {
 	margin-top: 40px;
 }
-a, a:visited {
+article a, a:visited {
   color: inherit;
 }
-blockquote {
+article blockquote {
 	margin-top: 52px;
 	margin-bottom: 52px;
 	padding-left: 17px;
@@ -73,7 +77,7 @@ blockquote {
 	font-style:  italic;
 	line-height: 34px;
 }
-li {
+article li {
   margin-top: 40px;
 	margin-bottom: 34px;
 	padding-left: 2px;
@@ -83,12 +87,22 @@ li {
 	font-size: 22px;
 	line-height: 23px;
 }
-ul + li, li + li {
+article ul + li, li + li {
 	margin: 20px auto;
 }
-img {
+article img {
   display: block;
 
   width: 1020px;
   margin: 90px auto;
+}
+nav ul li:first-of-type{
+  font-weight: bold;
+}
+nav ul li ul{
+  margin-left: 20px;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  font-weight: normal;
 }
